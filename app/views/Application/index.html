@@ -1,9 +1,9 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 
-<form name="wordCloudGenerator" action="/wordcloud" method="POST">
+#{form @WordCloud.generate()}
 	<textarea id="theText" name="theText" rows="5" cols="100"></textarea><br/>
 	<input type="radio" name="rotate" id="rotate" value="true"/>&nbsp;Rotate &nbsp;&nbsp;
 	Width:&nbsp;<input type="text" name="imgWidth" id="imgWidth"></input><br/>
 	<input type="submit"/>
-</form>
+#{/form}

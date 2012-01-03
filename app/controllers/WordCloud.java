@@ -20,7 +20,7 @@ public class WordCloud extends Controller {
 
     public static void generate(String theText,boolean rotate,int imgWidth) {
     	System.out.println("Got a request for WordCloud.generate");
-    	response.setContentTypeIfNotSet("application/png");
+    	response.setContentTypeIfNotSet("image/png");
 
 		try
 		{
